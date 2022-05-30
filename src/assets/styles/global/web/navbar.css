@@ -1,13 +1,23 @@
-.navbar-global 
+.navbar
 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
     padding-top: 10px;
     width: 100%;
     background: rgba(0,0,0,0.56);
     background-image: linear-gradient(90deg, rgb(63, 63, 63), #929292),linear-gradient(90deg, rgb(56, 56, 56), #898989);
     background-size: 100% 3px;
-    box-shadow: 8px 3px 3px rgba(0, 0, 0, 0.2);
     background-position: 0 0, 0 100%;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .navbar-logo 
@@ -17,24 +27,12 @@
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
+    margin-left: 20% ;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, .7), -2px -2px 4px rgba(255, 255, 255, .7);
 }
 
-.navbar-navigation
-{
-    color: rgba(255,255,255,0.9) !important;
-    mix-blend-mode: difference;
-    padding: 8px;
-    padding-left: 18px !important;
-    padding-right: 18px !important;
-}
 
-.navbar-navigation:hover
-{
-    transform: scale(0.98, 0.98);
-}
-
-#navcol-1 
+.navbar-page
 {
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, .5), -2px -2px 4px rgba(255, 255, 255, .5);
@@ -44,19 +42,47 @@
     color: rgba(255,255,255,0.9);
 }
 
+
+.navbar-page-nav-navigation
+{
+    color: rgba(255,255,255,0.9) !important;
+    mix-blend-mode: difference;
+    padding: 8px;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+
+.navbar-page-nav-navigation:hover
+{
+    transform: scale(0.98, 0.98);
+}
+
+
+
+.navbar-page-nav
+{
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0 ! important;
+    margin: 0 !important;
+}
+
 .nav-item
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
-.button-metamask
+
+.navbar-button
 {
     margin: 8px !important;
     margin-left: 18px !important;
     margin-right: 18px !important;
-    height: 90%;
+    height: 100%;
+    width: 7%;
+}
+.navbar-button-metamask
+{
     width: 100%;
     border: 0px !important;
     font-family: 'Yuji Syuku', serif !important;

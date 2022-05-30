@@ -1,24 +1,26 @@
 <template>
   <div>
-    <NavbarComponent/>
     <HomeComponent/>
     <AboutComponent/>
-    <BuyComponent/>
+    <ScrollBarComponent/>
+    <NavbarComponent/>
   </div>
 </template>
 
 <script>
-import HomeComponent from '@/components/common/home.vue'
+import AboutComponent from '@/components/about.vue'
+import HomeComponent from '@/components/home.vue'
 import NavbarComponent from '@/components/common/navbar.vue'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
+import ScrollBarComponent from '@/components/common/scrollbar.vue'
 
 export default {
   name: 'Home',
 
   components: {
+    AboutComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ScrollBarComponent
   },
   
 }
