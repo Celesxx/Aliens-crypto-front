@@ -1,0 +1,21 @@
+.home-title
+{
+    font-family: 'Yuji Syuku', serif;
+    font-size: 98px;
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+.home-description 
+{
+    font-family: 'Yuji Syuku', serif;
+    filter: drop-shadow(0 0 0.75rem black);
+    font-size: 31px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, .4), -2px -2px 4px rgba(255, 255, 255, .4);
+    font-family: 'Yuji Syuku', serif;
+    color: rgb(255,255,255);
+}
+
+#navbar-icon 
+{
+    filter: invert(100%);
+}

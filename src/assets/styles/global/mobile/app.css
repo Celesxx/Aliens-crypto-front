@@ -1,0 +1,4 @@
+@media screen and (max-width: 540px)
+{
+    .home{ grid-template-rows: 10% auto 10%; }
+}

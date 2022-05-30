@@ -1,0 +1,24 @@
+@media (min-width: 768px) and (max-width: 800px) {
+    .home-title {
+      font-size: 81px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 800px) {
+    .home-description {
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .home-title {
+      font-size: 48px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .home-description {
+      font-size: 16px;
+    }
+  }

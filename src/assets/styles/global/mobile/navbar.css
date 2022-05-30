@@ -1,0 +1,31 @@
+@media (max-width: 1150px) {
+    .navbar-navigation {
+      font-size: 21px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .navbar-navigation {
+      font-size: 17px;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+      }
+  }
+  
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-bottom: 20px;
+      transition: background .3s ease-in-out,padding-top .3s ease-in-out,padding-bottom .3s;
+      letter-spacing: 1px;
+      border-bottom: none;
+      background: transparent;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navbar-logo {
+      /*right: 0px;*/
+    }
+  }
