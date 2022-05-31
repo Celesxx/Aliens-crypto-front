@@ -50,9 +50,7 @@
     display: inline-block;
 }
 
-
-
-.scroll-content-nav-page:hover
+.scroll-active, .scroll-content-nav-page:hover
 {
     background: white;
 }

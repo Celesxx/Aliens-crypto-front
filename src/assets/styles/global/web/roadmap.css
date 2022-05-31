@@ -1,0 +1,30 @@
+.roadmap
+{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.roadmap-body
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+.roadmap-body-content
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-body-content-img
+{   
+    width: 523px;
+    height: 1083px;
+}

@@ -35,9 +35,21 @@
     filter: invert(100%);
 }
 
+.home-content-circle
+{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
 .home-content-aliens-words
 {
-    height: 50%;
+    height: 60%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .p-aliens
@@ -51,8 +63,7 @@
     visibility: hidden;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, .4), -2px -2px 4px rgba(255, 255, 255, .4);
     color: rgb(255,255,255);
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    white-space: nowrap;
     letter-spacing: .15em;
 }
 
@@ -70,28 +81,28 @@
 
 #words-3
 {
-    animation: animated-text 3.5s steps(30, end) 0.5s;
+    animation: animated-text 3.5s steps(30, end) 1.5s;
     animation-fill-mode: forwards;
 }
 
 #words-4
 {
-    animation: animated-text 2.5s steps(30, end) 1.5s;
+    animation: animated-text 2.5s steps(30, end) 2s;
     animation-fill-mode: forwards;
 }
 
 #words-content-1
 {
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 #words-content-2
 {
-    margin-bottom: 5%;
+    margin-bottom: 0%;
 }
 
-.words-margin-right {margin-right: 25%;}
-.words-margin-left {margin-left: 25%;}
+/* .words-margin-right {margin-right: 25%;}
+.words-margin-left {margin-left: 25%;} */
 
 
 @keyframes animated-text
@@ -106,4 +117,3 @@
         visibility: visible;
     }
 }
-
