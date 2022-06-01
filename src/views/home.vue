@@ -1,7 +1,7 @@
 <template>
   <div>
     <HomeComponent/>
-    <AboutComponent/>
+    <AboutComponent :position='current'/>
     <RoadmapComponent/>
     <ScrollBarComponent/>
     <NavbarComponent/>
@@ -25,8 +25,48 @@ export default {
     NavbarComponent,
     ScrollBarComponent
   },
-  
+
+  data() {
+    return {
+      current: ""
+    }
+  },
+
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+
+  methods: 
+  {
+    handleScroll (event) 
+    {
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("nav .scroll-content ul li");
+
+      sections.forEach((section) =>
+      {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop) {
+           this.current = section.getAttribute("id"); 
+          }
+      });
+
+      navLi.forEach((li) => 
+      {
+        li.classList.remove("scroll-active");
+        if (li.classList.contains(this.current)) 
+        { 
+          let allNavActive =  document.querySelectorAll("nav .scroll-content ul li.scroll-active")
+          li.classList.add("scroll-active"); 
+        }
+      });
+    }
+  }
 }
+
 </script>
 
 

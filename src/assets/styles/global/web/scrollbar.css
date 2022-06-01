@@ -50,7 +50,7 @@
     display: inline-block;
 }
 
-.scroll-active, .scroll-content-nav-page:hover
+.scroll-content-nav-page:hover
 {
     background: white;
 }
@@ -61,4 +61,9 @@
     position: absolute;
     height: 15px;
     width: 15px;
+}
+
+nav .scroll-content ul li.scroll-active
+{
+    background: white;
 }

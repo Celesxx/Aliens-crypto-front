@@ -34,7 +34,7 @@
 
 .navbar-page
 {
-    margin-left: 5.02%;
+    margin-left: 11%;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, .5), -2px -2px 4px rgba(255, 255, 255, .5);
     font-family: 'Yuji Syuku', serif;
@@ -80,10 +80,25 @@
     margin-left: 18px !important;
     margin-right: 18px !important;
     height: 100%;
-    width: 7%;
+    width: 13%;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-button-content
+{
+    width: 50%;
+    color: white;
+}
+
+.navbar-button-connected
+{
+    width: 100%;
+    color: white;
 }
 .navbar-button-metamask
 {
+    left:0;
     width: 100%;
     border: 0px !important;
     font-family: 'Yuji Syuku', serif !important;

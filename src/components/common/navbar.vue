@@ -10,17 +10,24 @@
           </ul>
       </div>
 
-      <div class="navbar-button"> <button class="navbar-button-metamask" type="button">Metamask</button> </div>
+      <div class="navbar-button"><MetamaskButtonComponent/> </div>
   
   </nav>
 </template>
+
 <script>
 
+import MetamaskButtonComponent from "@/components/common/metamaskButton.vue"
 
 export default 
 {
   name: 'HomeComponent',
+
+  components: {
+    MetamaskButtonComponent,
+  },
 }
+
 </script>
 
 
