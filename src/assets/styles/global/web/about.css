@@ -30,8 +30,8 @@
 
 .about-body-title-core
 {
-    width: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -43,9 +43,14 @@
     width: 100%;
     margin: 0;
     overflow: hidden;
-    border-right: 0.1em solid white;
     white-space: nowrap;
+}
 
+.outer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #about-title
 {

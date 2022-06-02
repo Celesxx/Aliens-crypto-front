@@ -37,13 +37,17 @@
 
 .home-content-circle
 {
-    height: 400px;
-    width: 400px;
-    background-color: black;
-    border: solid 2px white;
-    border-radius: 50%;
+    height: 100%;
+    width: 40%;
 }
 
+.home-content-video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -100;
+}
 .home-content-aliens-words
 {
     height: 60%;
@@ -61,7 +65,7 @@
     font-size: 31px;
     overflow: hidden;
     visibility: hidden;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, .4), -2px -2px 4px rgba(255, 255, 255, .4);
+    /* text-shadow: 2px 2px 4px rgba(255, 255, 255, .4), -2px -2px 4px rgba(255, 255, 255, .4); */
     color: rgb(255,255,255);
     white-space: nowrap;
     letter-spacing: .15em;
@@ -69,25 +73,25 @@
 
 #words-1
 {
-    animation: animated-text 3.5s steps(30, end);
+    animation: animated-text 3.5s steps(30, end) infinite, aliens-text 8s infinite;
     animation-fill-mode: forwards;
 }
 
 #words-2
 {
-    animation: animated-text 3s steps(30, end) 1s;
+    animation: animated-text 3s steps(30, end) 1s infinite, aliens-text 8s infinite;
     animation-fill-mode: forwards;
 }
 
 #words-3
 {
-    animation: animated-text 3.5s steps(30, end) 1.5s;
+    animation: animated-text 3.5s steps(30, end) 1.5s infinite, aliens-text 8s infinite;
     animation-fill-mode: forwards;
 }
 
 #words-4
 {
-    animation: animated-text 2.5s steps(30, end) 2s;
+    animation: animated-text 2.5s steps(30, end) 2s infinite, aliens-text 8s infinite;
     animation-fill-mode: forwards;
 }
 
@@ -116,4 +120,13 @@
         height: 100%;
         visibility: visible;
     }
+}
+
+
+@keyframes aliens-text {
+    0%   {text-shadow: 0 0 5px #FFFFFF; color: #fff;}
+    25%  {text-shadow: 0 0 8px #FFFFFF;}
+    50%  {text-shadow: 0 0 12px #FFFFFF; color: rgb(255, 255, 255);}
+    75%  {text-shadow: 0 0 8px #FFFFFF;}
+    100% {text-shadow: 0 0 5px #FFFFFF; color: #fff;}
 }

@@ -39,6 +39,8 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
 
+
+
   methods: 
   {
     handleScroll (event) 
