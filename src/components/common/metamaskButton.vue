@@ -6,7 +6,7 @@
     </div>
 
     <div class="navbar-button-connected" v-else>
-        {{this.address}}
+        {{getCurrentAccount}}
     </div>
 
 
@@ -43,16 +43,25 @@ export default
 
         const web3 = window.web3
         const accounts = await web3.eth.getAccounts()
-        this.address = accounts[0]
+        await this.$store.commit('checkIfExist', accounts[0])
+        if(!this.$store.state.isExist) this.$store.commit('setAccounts', { address: accounts[0], indice: [] })
+        else this.$store.commit('setCurrentAccount', accounts[0])
     }
   },
-  computed: {
+  computed: 
+  {
+      getCurrentAccount()
+      {
+        return this.$store.state.currentAddress
+      }
   },
   created () 
   {
     if (window.ethereum) 
     {
         this.isMetamaskSupported = true
+
+        if(this.$store.state.currentAddress != "") this.isLoggedIn = true
     }
   }
 }

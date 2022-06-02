@@ -2,7 +2,7 @@
   <div>
     <HomeComponent/>
     <AboutComponent :position='current'/>
-    <RoadmapComponent/>
+    <RoadmapComponent :position='current'/>
     <ScrollBarComponent/>
     <NavbarComponent/>
   </div>

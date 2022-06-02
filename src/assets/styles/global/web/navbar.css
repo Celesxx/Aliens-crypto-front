@@ -28,15 +28,15 @@
     text-align: center;
     text-transform: uppercase;
     margin-left: 20% ;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, .7), -2px -2px 4px rgba(255, 255, 255, .7);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, .7), -2px -2px 8px rgba(255, 255, 255, .7);
 }
 
 
 .navbar-page
 {
-    margin-left: 11%;
+    margin-left: 12%;
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, .5), -2px -2px 4px rgba(255, 255, 255, .5);
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, .5), -4px -4px 8px rgba(255, 255, 255, .5);
     font-family: 'Yuji Syuku', serif;
     font-weight: bold;
     font-size: 25px;
@@ -80,7 +80,7 @@
     margin-left: 18px !important;
     margin-right: 18px !important;
     height: 100%;
-    width: 13%;
+    width: 15%;
     display: flex;
     justify-content: end;
 }
@@ -96,6 +96,7 @@
     width: 100%;
     color: white;
 }
+
 .navbar-button-metamask
 {
     left:0;
