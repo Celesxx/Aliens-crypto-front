@@ -37,7 +37,7 @@
 
 .home-content-circle
 {
-    height: 100%;
+    height: 80%;
     width: 40%;
 }
 
@@ -125,8 +125,8 @@
 
 @keyframes aliens-text {
     0%   {text-shadow: 0 0 5px #FFFFFF; color: #fff;}
-    25%  {text-shadow: 0 0 8px #FFFFFF;}
-    50%  {text-shadow: 0 0 12px #FFFFFF; color: rgb(255, 255, 255);}
-    75%  {text-shadow: 0 0 8px #FFFFFF;}
+    25%  {text-shadow: 0 0 10px #FFFFFF;}
+    50%  {text-shadow: 0 0 15px #FFFFFF; color: rgb(255, 255, 255);}
+    75%  {text-shadow: 0 0 10px #FFFFFF;}
     100% {text-shadow: 0 0 5px #FFFFFF; color: #fff;}
 }

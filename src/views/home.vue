@@ -51,7 +51,7 @@ export default {
       sections.forEach((section) =>
       {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop) {
+        if (pageYOffset >= sectionTop - 40) {
            this.current = section.getAttribute("id"); 
           }
       });

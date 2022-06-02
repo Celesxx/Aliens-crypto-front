@@ -8,7 +8,6 @@
 
                 <div class="about-body-title-core">
                     <h1 class="about-body-content outer" id="about-title">{{this.part}}</h1>
-                    <!-- v-bind:style="{fontFamily: this.font}" -->
                 </div>
                 <div class="about-body-text-core">
                     <p class="about-body-content" id="about-text">{{this.description}}</p>
@@ -29,17 +28,6 @@ export default
     data() 
     {
         return {
-            // aboutWords : ['test', '121455'],
-            // glitchWords : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
-            // i: 0,
-            // offset: 0,
-            // len: 0,
-            // forwards : true,
-            // skip_count : 0,
-            // skip_delay : 15,
-            // speed : 10,
-            // activate: false,
-            // font: 'Alien',
             chars : "!<>-_\\/[]{}—=+*^?#________",
             part: "",
             positionGlitch: 0,
@@ -49,7 +37,7 @@ export default
             description: "",
             queue1: [],
             counter1 : 0,
-            phrases1 : ['bonjour humain de la terre, nous venons en paix', 'nous avons besoin de votre aider', "vous devez sauver notre race !"],
+            phrases1 : ['bonjour humain de la terre, nous venons en paix', 'nous sommes les istaris, nous venons de la galaxie d\'andromède', "notre race est au bord de l'extinction, nous avons besoin de l'aide de l'humanité", "un grand danger menace l'univers entier, si nous ne faisons rien il sera trop tard ..."],
         }
     },
 
@@ -59,7 +47,6 @@ export default
         {
             if(newPosition == "about")
             {
-                // this.wordflick()
 
                 const transmissionTitle = () => 
                 {
@@ -74,7 +61,7 @@ export default
                 {
                     this.setDescription(this.phrases1[this.counter1]).then(() => 
                     {
-                        setTimeout(transmissionDescription, 800)
+                        setTimeout(transmissionDescription, 2000)
                     })
                     this.counter1 = (this.counter1 + 1) % this.phrases1.length
                 }
@@ -88,74 +75,6 @@ export default
     
     methods: 
     {
-
-        //animation écriture text
-        wordflick() 
-        {
-            this.activate = true
-            this.len = this.aboutWords.length
-            
-            setInterval(() => 
-            {
-                if(this.forwards) 
-                {
-                    if (this.offset >= this.aboutWords[this.i].length) 
-                    {
-                        this.skip_count += 1;
-                        if (this.skip_count == this.skip_delay) 
-                        {
-                            this.forwards = false;
-                            this.skip_count = 0;
-                        }
-                    }
-                }
-                else 
-                {
-                    if (this.offset == 0) 
-                    {
-                        this.forwards = true;
-                        this.i += 1;
-                        this.offset = 0;
-                        if (this.i >= this.len) this.i = 0;
-                    }
-                }
-                
-
-                if(this.positionGlitch == 0) this.part = this.aboutWords[this.i].substr(0, this.offset)
-                else
-                {
-                    let part = this.part.split('')
-                    if(this.positionGlitch == 1) 
-                    {
-                       part.push(this.glitchWords[this.positionGlitch])
-                       this.part = part.join('')
-                    }
-                    else if(this.positionGlitch <= this.glitchWords.length)
-                    {
-                        this.part = part.splice(-1).join('')
-                        part = part.splice(-1)
-                        part.push(this.glitchWords[this.positionGlitch])
-                        this.part = part.join('')
-                    }else
-                    {
-                        this.part = this.part.split('').splice(-1).join('')
-                        this.positionGlitch == 0
-                    }
-                }
-                this.positionGlitch += 1
-
-                if (this.skip_count == 0) 
-                {
-                    if (this.forwards) this.offset += 1;
-                    else this.offset -= 1;
-                }
-
-            },this.speed);
-        },
-
-
-
-
         setTitle(newText) 
         {
             const oldText = this.part
@@ -208,7 +127,6 @@ export default
             this.frame++
             }
         },
-
 
 
 
@@ -266,16 +184,11 @@ export default
         },
 
 
-
-
-
         randomChar() {
             return this.chars[Math.floor(Math.random() * this.chars.length)]
         },
 
 
-
-        
     }
 }
 </script>
