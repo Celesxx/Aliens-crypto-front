@@ -19,41 +19,47 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.roadmap-body-core
-{
-    height: 90%;
-    width: 75%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 6px rgba(255, 255, 255, .5), -2px -2px 6px rgba(255, 255, 255, .5);
     font-family: 'Yuji Syuku', serif;
-    /* font-weight: bold; */
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 25px;
     color: rgba(255,255,255,0.9);
+}
+
+.roadmap-body-core
+{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: initial;
+    font-size: 18px;
 
 }
+
 
 .road-p1 { justify-content: flex-start; }
 .road-p2 { justify-content: flex-end; }
 .road-p3 { justify-content: flex-start; }
 .road-p4 { justify-content: flex-end; }
 .road-p5 { justify-content: flex-start; }
-.road-p6 { justify-content: center; }
+.road-p6 { justify-content: flex-end; }
 
 
 .roadmap-body-core-word
 {
-    height: 18%;
-    width: 40%;
+    height: 16%;
+    width: 100%;
     display: flex;
     align-items: center;
+    white-space: pre;
 }
 
 .roadmap-body-svg
@@ -67,31 +73,56 @@
     height: 1083px;
 }
 
+.roadmap-body-word
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    
+}
+
+.border-right
+{
+    align-items: flex-end;
+    border-right: 4px solid white;
+    border-radius: 20px !important;
+}
+
+.border-left
+{
+    align-items: flex-start;
+    border-left: 4px solid white;
+    border-radius: 20px !important;
+}
+
+.title-word-roadmap { margin: 0; margin-top: 2.5%; }
 
 #road-p1
 {
-    padding-top: 10%;
-    padding-left: 3%;
+    /* padding-top: 10%;
+    margin-right: 15%; */
 }
 
 #road-p2
 {
-    padding-bottom: 15%;
+    /* padding-bottom: 15%; */
 }
 
 #road-p4
 {
-    padding-bottom: 20%;
-    padding-right: 5%;
+    /* padding-bottom: 20%; */
+    /* padding-right: 5%; */
 }
 
 #road-p5
 {
-    padding-left: 18%;
-    padding-bottom: 8%;
+    /* padding-left: 18%; */
+    /* padding-bottom: 8%; */
 }
 
 #road-p6
 {
-    padding-left: 20%;
+    /* padding-left: 20%; */
 }

@@ -1,16 +1,16 @@
 <template>
 
-    <section class="about" id="about">
+    <section class="indice3" id="indice3">
 
-        <div class= "about-body">
+        <div class= "indice-body">
         
-            <div class="about-body-container">
+            <div class="indice-body-container">
 
-                <div class="about-body-title-core">
-                    <h1 class="about-body-content outer" id="about-title">{{this.part}}</h1>
+                <div class="indice-body-title-core">
+                    <h1 class="indice-body-content outer" id="indice-title">{{this.part}}</h1>
                 </div>
-                <div class="about-body-text-core">
-                    <p class="about-body-content" id="about-text">{{this.description}}</p>
+                <div class="indice-body-text-core">
+                    <p class="indice-body-content" id="indice-text">{{this.description}}</p>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@
 <script>
 export default 
 {
-    name: 'AboutComponent',
+    name: 'Indice3Component',
     props: ['position'],
     data() 
     {
@@ -37,7 +37,7 @@ export default
             description: "",
             queue1: [],
             counter1 : 0,
-            phrases1 : ['bonjour humain de la terre, nous venons en paix', 'nous sommes les istaris, nous venons de la galaxie d\'andromède', "notre race est au bord de l'extinction, nous avons besoin de l'aide de l'humanité", "un grand danger menace l'univers entier, si nous ne faisons rien il sera trop tard ..."],
+            phrases1 : ['nous avons du mal à communiquer avec vous', 'vous devez rétablir les transmissions', 'pour cela décrypter nos prochaines transmission via le réseau twitter', 'cependant faites attentions ils pourraient tenter de vous en empêcher'],
         }
     },
 
@@ -45,7 +45,7 @@ export default
     {
         position(newPosition) 
         {
-            if(newPosition == "about")
+            if(newPosition == "indice3")
             {
 
                 const transmissionTitle = () => 
@@ -194,5 +194,5 @@ export default
 </script>
 
 <style scoped>
-    @import '../assets/styles/global/web/about.css';
+    @import '../assets/styles/global/web/indice.css';
 </style>

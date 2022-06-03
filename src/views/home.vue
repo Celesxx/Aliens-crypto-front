@@ -1,17 +1,21 @@
 <template>
   <div>
     <HomeComponent/>
-    <AboutComponent :position='current'/>
+    <Indice1Component :position='current'/>
     <RoadmapComponent :position='current'/>
+    <Indice3Component :position='current'/>
+    <Indice4Component :position='current'/>
     <ScrollBarComponent/>
     <NavbarComponent/>
   </div>
 </template>
 
 <script>
-import AboutComponent from '@/components/about.vue'
 import HomeComponent from '@/components/home.vue'
+import Indice1Component from '@/components/indice.vue'
 import RoadmapComponent from '@/components/roadmap.vue'
+import Indice3Component from '@/components/indice3.vue'
+import Indice4Component from '@/components/indice4.vue'
 import NavbarComponent from '@/components/common/navbar.vue'
 import ScrollBarComponent from '@/components/common/scrollbar.vue'
 
@@ -19,11 +23,13 @@ export default {
   name: 'Home',
 
   components: {
-    AboutComponent,
+    Indice1Component,
     HomeComponent,
     RoadmapComponent,
     NavbarComponent,
-    ScrollBarComponent
+    ScrollBarComponent,
+    Indice3Component,
+    Indice4Component
   },
 
   data() {
@@ -64,7 +70,7 @@ export default {
           let allNavActive =  document.querySelectorAll("nav .scroll-content ul li.scroll-active")
           li.classList.add("scroll-active"); 
         }
-      });
+      })
     }
   }
 }

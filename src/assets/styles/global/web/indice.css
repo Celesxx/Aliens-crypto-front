@@ -1,4 +1,4 @@
-.about
+.indice1 
 {
     width: 100%;
     height: 100vh;
@@ -6,7 +6,22 @@
     scroll-behavior: smooth;
 }
 
-.about-body
+.indice3
+{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    scroll-behavior: smooth;
+}
+
+.indice4
+{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    scroll-behavior: smooth;
+}
+.indice-body
 {
     width: 100%;
     height: 100%;
@@ -15,9 +30,10 @@
     align-items: center;
 }
 
-.about-body-container
+.indice-body-container
 {
-    width: 50%;
+    width: 40%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,14 +44,14 @@
 }
 
 
-.about-body-title-core
+.indice-body-title-core
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.about-body-content
+.indice-body-content
 {
     font-size: 35px;
     /* visibility: hidden; */
@@ -53,20 +69,52 @@
     align-items: center;
 }
 
-#about-title
+#indice-title
 {
-    /* animation: animated-text-about 3.5s steps(30, end), blink-caret 0.5s step-end infinite alternate;
+    /* animation: animated-text-indice 3.5s steps(30, end), blink-caret 0.5s step-end infinite alternate;
     animation-fill-mode: forwards; */
 }
 
-#about-text
+
+.indice-body-container-card
+{
+    width: 60%;
+    height: 60%;
+    border: 3px solid white;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title-content {margin: 0;}
+
+.card-core
+{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#indice-text
 {
     font-size: 25px;
 }
 
 
 
-@keyframes animated-text-about
+@keyframes animated-text-indice
 {
     from
     {
