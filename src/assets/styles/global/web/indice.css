@@ -1,4 +1,4 @@
-.indice1 
+.indice1, .indice3, .indice4, .indice5
 {
     width: 100%;
     height: 100vh;
@@ -6,21 +6,6 @@
     scroll-behavior: smooth;
 }
 
-.indice3
-{
-    width: 100%;
-    height: 100vh;
-    background: black;
-    scroll-behavior: smooth;
-}
-
-.indice4
-{
-    width: 100%;
-    height: 100vh;
-    background: black;
-    scroll-behavior: smooth;
-}
 .indice-body
 {
     width: 100%;
@@ -80,12 +65,18 @@
 {
     width: 60%;
     height: 60%;
-    border: 3px solid white;
-    border-radius: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background: rgba(0,0,0,0.0) !important;
+    border-left: 3px solid rgb(161, 161, 161) !important;
+    border-right: 3px solid rgb(63, 63, 63) !important;
+    background-image: linear-gradient(90deg, rgb(63, 63, 63), #929292),linear-gradient(90deg, rgb(56, 56, 56), #898989);
+    background-size: 100% 2px !important;
+    background-position: 0 0, 0 100% !important;
+    border-radius: 40px !important;
+    background-repeat: no-repeat !important;
 }
 
 .card-title
@@ -95,21 +86,151 @@
     align-items: center;
 }
 
-.card-title-content {margin: 0;}
+.card-title-content
+{
+    margin: 0;
+    font-size: 28px;
+}
 
+.card-core-content 
+{
+    text-align: center ;
+    font-size: 22px;
+    margin: 0;
+}
 .card-core
 {
     height: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 
+
+.card-core-link
+{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.0) !important;
+    border-left: 3px solid rgb(161, 161, 161) !important;
+    border-right: 3px solid rgb(63, 63, 63) !important;
+    background-image: linear-gradient(90deg, rgb(63, 63, 63), #929292),linear-gradient(90deg, rgb(56, 56, 56), #898989);
+    background-size: 100% 2px !important;
+    background-position: 0 0, 0 100% !important;
+    border-radius: 40px !important;
+    background-repeat: no-repeat !important;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-core-link:hover
+{
+    transform: scale(0.9, 0.9);
+}
+
+.card-core-discord
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-core-discord-img
+{
+    height: 50%;
+    width: auto;
+}
+
 #indice-text
 {
     font-size: 25px;
+}
+
+
+
+
+
+/* Indice 5 */
+
+.indice5-body-container
+{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,0.9) !important;
+    font-family: 'Yuji Syuku', serif;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, .7), -1px -1px 4px rgba(255, 255, 255, .7);
+}
+
+.indice5-body-content
+{
+    /* position: absolute; */
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.indice5-body-img
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+    border-left: 3px solid rgb(161, 161, 161) !important;
+    border-right: 3px solid rgb(63, 63, 63) !important;
+    border-radius: 50px !important;
+    background-repeat: no-repeat !important;
+}
+
+.card-core-aliens-img
+{
+    height: auto;
+    width: 250px;
+    border-radius: 40px;
+}
+
+.indice5-body-core
+{
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+
+}
+
+.indice5-body-name
+{
+    font-size: 22px;
+    white-space: pre;
+    font-weight: bolder;
+    margin:0;
+    margin-top: 1em;
+}
+
+.indice5-body-text
+{
+    font-size: 22px;
 }
 
 

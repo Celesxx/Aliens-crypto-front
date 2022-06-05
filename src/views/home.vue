@@ -5,6 +5,7 @@
     <RoadmapComponent :position='current'/>
     <Indice3Component :position='current'/>
     <Indice4Component :position='current'/>
+    <Indice5Component :position='current'/>
     <ScrollBarComponent/>
     <NavbarComponent/>
   </div>
@@ -16,6 +17,7 @@ import Indice1Component from '@/components/indice.vue'
 import RoadmapComponent from '@/components/roadmap.vue'
 import Indice3Component from '@/components/indice3.vue'
 import Indice4Component from '@/components/indice4.vue'
+import Indice5Component from '@/components/indice5.vue'
 import NavbarComponent from '@/components/common/navbar.vue'
 import ScrollBarComponent from '@/components/common/scrollbar.vue'
 
@@ -29,7 +31,8 @@ export default {
     NavbarComponent,
     ScrollBarComponent,
     Indice3Component,
-    Indice4Component
+    Indice4Component,
+    Indice5Component,
   },
 
   data() {

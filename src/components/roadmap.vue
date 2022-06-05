@@ -6,11 +6,39 @@
         
           <div class="roadmap-body-content">
 
+            <div class="roadmap-body-bar">
+
+                <div class="roadmap-body-bar-core" >
+
+                </div>
+                
+                <div class="roadmap-body-bar-core" >
+
+                </div>
+
+                <div class="roadmap-body-bar-core" >
+
+                </div>
+
+                <div class="roadmap-body-bar-core" >
+
+                </div>
+
+                <div class="roadmap-body-bar-core" >
+
+                </div>
+
+                <div class="roadmap-body-bar-core" >
+                  
+                </div>
+            </div>
+
             <h1>{{this.part[0]}}</h1>
+
             <div class="roadmap-body-core">
                 <div class="roadmap-body-core-word road-p1"> 
 
-                  <div class="roadmap-body-word border-left">
+                  <div class="roadmap-body-word ">
                     <h1 class="title-word-roadmap">{{this.part[1]}}</h1>
                     <p id="road-p1">{{this.part[2]}}</p> 
                   </div>
@@ -18,35 +46,35 @@
                 </div>
                 <div class="roadmap-body-core-word road-p2"> 
 
-                  <div class="roadmap-body-word border-right">
+                  <div class="roadmap-body-word ">
                     <h1 class="title-word-roadmap">{{this.part[3]}}</h1>
                     <p id="road-p2">{{this.part[4]}}</p> </div>
                   </div>
 
                 <div class="roadmap-body-core-word road-p3">
                   
-                  <div class="roadmap-body-word border-left">
+                  <div class="roadmap-body-word ">
                     <h1 class="title-word-roadmap">{{this.part[5]}}</h1>
                     <p id="road-p3">{{this.part[6]}}</p> </div>
                   </div>
 
                 <div class="roadmap-body-core-word road-p4">
                   
-                  <div class="roadmap-body-word border-right">
+                  <div class="roadmap-body-word ">
                     <h1 class="title-word-roadmap">{{this.part[7]}}</h1>
                     <p id="road-p4">{{this.part[8]}}</p> </div>
                   </div>
 
                 <div class="roadmap-body-core-word road-p5"> 
                   
-                  <div class="roadmap-body-word border-left">
+                  <div class="roadmap-body-word ">
                     <h1 class="title-word-roadmap">{{this.part[9]}}</h1>
                     <p id="road-p5">{{this.part[10]}}</p> </div>
                   </div>
 
                 <div class="roadmap-body-core-word road-p6">  
 
-                  <div class="roadmap-body-word border-right">
+                  <div class="roadmap-body-word ">
                     <h1 class="title-word-roadmap">{{this.part[11]}}</h1>
                     <p id="road-p6">{{this.part[12]}}</p> </div>
                   </div>

@@ -13,7 +13,11 @@
                     <div class="card-core">
                         <p class="card-core-content">{{this.description}}</p>
 
-                        <div class="card-core-link"></div>
+                        <div class="card-core-link">
+                            <a target="_blank" href="http://google.com" class="card-core-discord">
+                                <img class="card-core-discord-img" src="../assets/background/web/discord.png">
+                            </a>
+                        </div>
                     </div>
 
                 </div>

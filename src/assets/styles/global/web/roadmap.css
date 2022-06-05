@@ -30,10 +30,33 @@
     color: rgba(255,255,255,0.9);
 }
 
+.roadmap-body-bar
+{
+    position: absolute;
+    height: 60%;
+    width: 5px;
+    background: white;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.roadmap-body-bar-core
+{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .roadmap-body-core
 {
     height: 70%;
-    width: 60%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,6 +106,7 @@
     
 }
 
+/* 
 .border-right
 {
     align-items: flex-end;
@@ -95,7 +119,7 @@
     align-items: flex-start;
     border-left: 4px solid white;
     border-radius: 20px !important;
-}
+} */
 
 .title-word-roadmap { margin: 0; margin-top: 2.5%; }
 
