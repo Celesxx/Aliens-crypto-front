@@ -1,6 +1,6 @@
 <template>
 
-  <section class="home" id="home">
+  <section class="home" id="home" ref="home">
 
     <div class= "home-content">
 
@@ -76,7 +76,7 @@
     methods: 
     {
 
-      submitHint() 
+      async submitHint() 
       {
         if(
           this.$store.state.indice.some(indice => indice == this.hintInput) 
@@ -86,9 +86,21 @@
           !this.$store.state.indiceFound.some(indice => indice == this.hintInput)
         )
         {
+          let ref = ["indice1", "roadmap", "indice2", "indice3", "indice4", "indice5"]
           this.$store.commit('setIndiceFound', this.hintInput)
+          let length = this.$store.state.indiceFound.length
           this.validIndice = true
-          this.reload++
+          await this.reload++
+
+          const sections = document.querySelectorAll("section");
+          for(const section of sections)
+          {
+            if(section.classList.value == ref[length - 1]) 
+            {
+              window.scrollTo(0, section.offsetTop)
+            }
+          }
+
         }
       },
 

@@ -4,36 +4,92 @@
 
         <div class= "roadmap-body">
         
+
           <div class="roadmap-body-content">
 
+
+            <h1 class="roadmap-title">{{this.part[0]}}</h1>
+
             <div class="roadmap-body-bar">
+                <div class="base-content-circle" ></div>
+                <div class="base-content-circle" ></div>
+                <div class="base-content-circle" ></div>
+                <div class="base-content-circle" ></div>
+                <div class="base-content-circle" ></div>
+                <div class="base-content-circle" ></div>
+            </div>
+            
 
-                <div class="roadmap-body-bar-core" >
+            <div class="roadmap-body-base">
 
+              <div class="base-content base-right">
+                <div class="base-content-core core-right">
+                  <div class="core-box">
+                    <h1 class="box-title">{{this.part[1]}}</h1>
+                    <p class="box-description">{{this.part[2]}}</p> 
+                  </div>
+                  <div class="core-attachement"></div>
                 </div>
-                
-                <div class="roadmap-body-bar-core" >
+              </div>
 
+              <div class="base-content base-left">
+                <div class="base-content-core core-left">
+                  <div class="core-attachement"></div>
+                  <div class="core-box">
+                    <h1 class="box-title">{{this.part[3]}}</h1>
+                    <p class="box-description">{{this.part[4]}}</p> 
+                  </div>
                 </div>
+              </div>
 
-                <div class="roadmap-body-bar-core" >
-
+              <div class="base-content base-right">
+                <div class="base-content-core core-right">
+                  <div class="core-box">
+                    <h1 class="box-title">{{this.part[5]}}</h1>
+                    <p class="box-description">{{this.part[6]}}</p> 
+                  </div>
+                  <div class="core-attachement"></div>
                 </div>
+              </div>
 
-                <div class="roadmap-body-bar-core" >
-
+              <div class="base-content base-left">
+                <div class="base-content-core core-left">
+                  <div class="core-attachement"></div>
+                  <div class="core-box">
+                    <h1 class="box-title">{{this.part[7]}}</h1>
+                    <p class="box-description">{{this.part[8]}}</p> 
+                  </div>
                 </div>
+              </div>
 
-                <div class="roadmap-body-bar-core" >
-
+              <div class="base-content base-right">
+                <div class="base-content-core core-right">
+                  <div class="core-box">
+                    <h1 class="box-title">{{this.part[9]}}</h1>
+                    <p class="box-description">{{this.part[10]}}</p> 
+                  </div>
+                  <div class="core-attachement"></div>
                 </div>
+              </div>
 
-                <div class="roadmap-body-bar-core" >
-                  
+              <div class="base-content base-left">
+                <div class="base-content-core core-left">
+                  <div class="core-attachement"></div>
+                  <div class="core-box">
+                    <h1 class="box-title">{{this.part[11]}}</h1>
+                    <p class="box-description">{{this.part[12]}}</p> 
+                  </div>
                 </div>
+              </div>
+
+
             </div>
 
-            <h1>{{this.part[0]}}</h1>
+          
+
+          
+
+            <!-- <h1>{{this.part[0]}}</h1>
 
             <div class="roadmap-body-core">
                 <div class="roadmap-body-core-word road-p1"> 
@@ -79,7 +135,7 @@
                     <p id="road-p6">{{this.part[12]}}</p> </div>
                   </div>
                   
-            </div>
+            </div> -->
             
             <!-- <div class="roadmap-body-svg">
               <svg class="roadmap-svg" width="270" height="542" viewBox="0 0 539 1085" fill="none" xmlns="http://www.w3.org/2000/svg">

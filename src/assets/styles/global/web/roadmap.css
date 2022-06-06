@@ -30,27 +30,121 @@
     color: rgba(255,255,255,0.9);
 }
 
+.roadmap-title
+{
+    height: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .roadmap-body-bar
 {
     position: absolute;
+    margin-top: 6.7em;
     height: 60%;
     width: 5px;
     background: white;
-    display: flex;  
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.roadmap-body-bar-core
+
+.roadmap-body-base
+{
+    width: 40%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .roadmap-body-base :nth-child(1){ align-items: flex-end;} */
+
+.base-content
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.base-right{ justify-content: flex-start;}
+.base-left{ justify-content: flex-end;}
+
+
+.base-content-circle
 {
     height: 30px;
     width: 30px;
     background-color: black;
     border: solid 2px white;
     border-radius: 50%;
-    display: inline-block;
+    z-index: 9999;
+}
+
+.base-content-core
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.core-left{ justify-content: flex-start;}
+.core-right{ justify-content: flex-end;}
+
+.core-attachement
+{
+    width: 10%;
+    height: 5px;
+    background: white;
+}
+
+.core-box
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-left: 3px solid rgb(161, 161, 161) !important;
+    border-right: 3px solid rgb(63, 63, 63) !important;
+    border-radius: 50px !important;
+    background-repeat: no-repeat !important;
+}
+
+.box-title
+{ 
+    height: 40%;
+    margin: 0; 
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-description
+{
+    height: 60%;
+    margin: 0; 
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .roadmap-body-core

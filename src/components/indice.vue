@@ -1,6 +1,6 @@
 <template>
 
-    <section class="indice1" id="indice1">
+    <section class="indice1" id="indice1" ref="indice1">
 
         <div class= "indice-body">
         

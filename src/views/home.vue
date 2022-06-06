@@ -1,11 +1,11 @@
 <template>
   <div>
     <HomeComponent/>
-    <Indice1Component :position='current'/>
-    <RoadmapComponent :position='current'/>
-    <Indice3Component :position='current'/>
-    <Indice4Component :position='current'/>
-    <Indice5Component :position='current'/>
+    <Indice1Component v-if="getHintFound >= 1" :position='current'/>
+    <RoadmapComponent v-if="getHintFound >= 2" :position='current'/>
+    <Indice3Component v-if="getHintFound >= 3" :position='current'/>
+    <Indice4Component v-if="getHintFound >= 4" :position='current'/>
+    <Indice5Component v-if="getHintFound >= 5" :position='current'/>
     <ScrollBarComponent/>
     <NavbarComponent/>
   </div>
@@ -48,7 +48,10 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
 
-
+  computed: 
+  {
+    getHintFound() { return this.$store.state.indiceFound.length},
+  },
 
   methods: 
   {
