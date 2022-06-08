@@ -35,6 +35,8 @@
 </template>
 
 <script>
+  import HintRequest from '/helpers/hintRequest.helper.js'
+
   export default 
   {
     name: 'HomeComponent',
@@ -49,7 +51,6 @@
             phrases : ['tentative,','connexion','echec critique', 'technologie', 'primitive'],
             myData: "",
             hintInput: "",
-            validIndice : false,
             reload: 0,
         }
     },
@@ -69,8 +70,8 @@
 
     computed: 
     {
-      getHintFound() { return this.$store.state.indiceFound.length},
-      getCurrentAccount() { return this.$store.state.currentAddress }
+      getHintFound() { return this.$store.state.currentHint.length},
+      getCurrentAccount() { return this.$store.state.account }
     },
 
     methods: 
@@ -78,18 +79,17 @@
 
       async submitHint() 
       {
-        if(
-          this.$store.state.indice.some(indice => indice == this.hintInput) 
-          && 
-          this.$store.state.indiceFound.length < 7
-          &&
-          !this.$store.state.indiceFound.some(indice => indice == this.hintInput)
-        )
+        
+        const hintRequest = new HintRequest()
+        let requestResult = await hintRequest.getNextHint("aliens-piste", this.$store.state.token, this.hintInput, this.$store.state.currentHint)
+        if(!requestResult.state && !requestResult.found) window.alert(requestResult.message)
+        else if(!requestResult.found) window.alert(requestResult.message)
+        else if(requestResult.found && requestResult.state)
         {
-          let ref = ["indice1", "roadmap", "indice2", "indice3", "indice4", "indice5"]
-          this.$store.commit('setIndiceFound', this.hintInput)
-          let length = this.$store.state.indiceFound.length
-          this.validIndice = true
+          let ref = ["indice1", "roadmap", "indice3", "indice4", "indice5"]
+          this.$store.commit('setHintFound', this.hintInput)
+
+          const length = this.$store.state.currentHint.length
           await this.reload++
 
           const sections = document.querySelectorAll("section");

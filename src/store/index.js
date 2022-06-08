@@ -7,36 +7,19 @@ export default createStore({
   })],
   state: 
   {
-    accounts: [],
-    indice: [4, 8, 15, 16, 23, 42],
-    currentAddress: "",
-    indiceFound: [],
-    isExist: false
+    isExist: false,
+    token: "",
+    account: "",
+    currentHint: []
   },
   mutations: 
   {
-    setAccounts(state, account)
-    {
-      state.accounts.push(account)
-      state.currentAddress = account.address
-    },
 
-    setCurrentAccount(state, address) { state.currentAddress = address },
-    setIndiceFound(state, indice) 
-    { 
-      state.indiceFound.push(indice)
-      for(const account of state.accounts) if(account.address == state.currentAddress) account.indice.push(indice)
-    },
+    setToken(state, token) { state.token = token},
+    setAccount(state, account) { state.account = account},
+    setHintFound(state, currentHint) { state.currentHint.push(currentHint) },
+    setHint(state, currentHint) { state.currentHint = currentHint },
 
-    checkIfExist(state, address)
-    {
-      for(const account of state.accounts) if(account.address == address) state.isExist = true
-    },
-
-    updateAccounts(state, accounts)
-    {
-      state.accounts = accounts
-    }
   },
   actions: 
   {

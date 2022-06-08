@@ -21,7 +21,7 @@ export default
 
   computed: 
   {
-    getHintFound() { return this.$store.state.indiceFound.length},
+    getHintFound() { return this.$store.state.currentHint.length},
   },
 }
 
